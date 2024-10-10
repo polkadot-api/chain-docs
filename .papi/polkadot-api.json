@@ -1,0 +1,74 @@
+{
+  "version": 0,
+  "descriptorPath": ".papi/descriptors",
+  "entries": {
+    "polkadot": {
+      "chain": "polkadot",
+      "metadata": ".papi/metadata/polkadot.scale"
+    },
+    "polkadot_asset_hub": {
+      "chain": "polkadot_asset_hub",
+      "metadata": ".papi/metadata/polkadot_asset_hub.scale"
+    },
+    "polkadot_bridge_hub": {
+      "chain": "polkadot_bridge_hub",
+      "metadata": ".papi/metadata/polkadot_bridge_hub.scale"
+    },
+    "polkadot_collectives": {
+      "chain": "polkadot_collectives",
+      "metadata": ".papi/metadata/polkadot_collectives.scale"
+    },
+    "polkadot_people": {
+      "chain": "polkadot_people",
+      "metadata": ".papi/metadata/polkadot_people.scale"
+    },
+    "kusama": {
+      "chain": "ksmcc3",
+      "metadata": ".papi/metadata/kusama.scale"
+    },
+    "kusama_asset_hub": {
+      "chain": "ksmcc3_asset_hub",
+      "metadata": ".papi/metadata/ksmcc3_asset_hub.scale"
+    },
+    "kusama_bridge_hub": {
+      "chain": "ksmcc3_bridge_hub",
+      "metadata": ".papi/metadata/ksmcc3_bridge_hub.scale"
+    },
+    "kusama_encointer": {
+      "chain": "ksmcc3_encointer",
+      "metadata": ".papi/metadata/ksmcc3_encointer.scale"
+    },
+    "kusama_people": {
+      "chain": "ksmcc3_people",
+      "metadata": ".papi/metadata/ksmcc3_people.scale"
+    },
+    "paseo": {
+      "chain": "paseo",
+      "metadata": ".papi/metadata/paseo.scale"
+    },
+    "paseo_asset_hub": {
+      "chain": "paseo_asset_hub",
+      "metadata": ".papi/metadata/paseo_asset_hub.scale"
+    },
+    "westend": {
+      "chain": "westend2",
+      "metadata": ".papi/metadata/westend2.scale"
+    },
+    "westend_asset_hub": {
+      "chain": "westend2_asset_hub",
+      "metadata": ".papi/metadata/westend2_asset_hub.scale"
+    },
+    "westend_bridge_hub": {
+      "chain": "westend2_bridge_hub",
+      "metadata": ".papi/metadata/westend2_bridge_hub.scale"
+    },
+    "westend_collectives": {
+      "chain": "westend2_collectives",
+      "metadata": ".papi/metadata/westend2_collectives.scale"
+    },
+    "westend_people": {
+      "chain": "westend2_people",
+      "metadata": ".papi/metadata/westend2_people.scale"
+    }
+  }
+}
