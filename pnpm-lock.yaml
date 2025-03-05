@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@polkadot-api/descriptors':
-        specifier: file:.papi/descriptors
-        version: file:.papi/descriptors(polkadot-api@1.9.2(rxjs@7.8.2)(yaml@2.7.0))
       '@polkadot-api/docgen':
         specifier: ^0.1.11
         version: 0.1.11(yaml@2.7.0)
@@ -233,11 +230,6 @@ packages:
 
   '@polkadot-api/codegen@0.13.0':
     resolution: {integrity: sha512-VU0juJz7TWohFa/tUqOSUdauGlGBJT562+POFerz1/DdXeJ4P1U7BKGM+s57PJlN8D6cHfIv1uoPvuuwnfazgg==}
-
-  '@polkadot-api/descriptors@file:.papi/descriptors':
-    resolution: {directory: .papi/descriptors, type: directory}
-    peerDependencies:
-      polkadot-api: '*'
 
   '@polkadot-api/docgen@0.1.11':
     resolution: {integrity: sha512-4y/XWICso/Eph11jQa0vKKVkmggJQ5fSRBqKT1Ilxwpye/1MA2mBPXmS4F+FsKSGtV5RhS6mY6B1a3rPU3KCEg==}
@@ -1224,10 +1216,6 @@ snapshots:
       '@polkadot-api/metadata-compatibility': 0.1.15
       '@polkadot-api/substrate-bindings': 0.11.0
       '@polkadot-api/utils': 0.1.2
-
-  '@polkadot-api/descriptors@file:.papi/descriptors(polkadot-api@1.9.2(rxjs@7.8.2)(yaml@2.7.0))':
-    dependencies:
-      polkadot-api: 1.9.2(rxjs@7.8.2)(yaml@2.7.0)
 
   '@polkadot-api/docgen@0.1.11(yaml@2.7.0)':
     dependencies:
