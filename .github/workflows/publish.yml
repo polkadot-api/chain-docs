@@ -31,17 +31,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v4
-      - name: Setup Node.js 22
-        uses: actions/setup-node@v4
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
       - name: Install deps
         run: pnpm install
       - name: Build
-        run: pnpm build
+        # sometimes build process fails due to smoldot not being able to get metadata
+        # we add 3 retries
+        run: |
+          attempt=0
+          while [[ $attempt -le 3 ]]; do
+            attempt=$(( $attempt +1 ))
+            pnpm build
+            last_return=$?
+            if [[ $last_return -eq 0 ]]; then break; fi
+          done
+          exit $last_return
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
